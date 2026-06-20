@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raj | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(-45deg,#111,#1a1a1a,#222,#111);
+    background-size:400% 400%;
+    animation:bgAnimation 12s ease infinite;
+    color:white;
+}
+
+@keyframes bgAnimation{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:50px 20px;
+    text-align:center;
+}
+
+.profile{
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+    100%{transform:translateY(0);}
+}
+
+h1{
+    font-size:4rem;
+    margin-bottom:10px;
+    animation:fadeIn 1.5s ease;
+}
+
+.role{
+    font-size:1.3rem;
+    color:#cfcfcf;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 24px;
+    margin:10px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+section{
+    margin-top:80px;
+    padding:30px;
+    background:rgba(255,255,255,0.05);
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    animation:fadeUp 1s ease;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="profile">
+        <h1>Raj</h1>
+        <p class="role">Artist • Gamer • Content Creator</p>
+    </div>
+
+    <a href="#links" class="btn">My Links</a>
+    <a href="#contact" class="btn">Contact Me</a>
+    <a href="#about" class="btn">About Me</a>
+
+    <!-- Links Section -->
+    <section id="links">
+        <h2>My Links</h2>
+
+        <a href="https://www.youtube.com/@Xentrax_1M" class="btn" target="_blank">
+            YouTube Channel
+        </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+        <p>📧 Email: rjha46007@gmail.com</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Hi, I'm Raj, a YouTube content creator who loves making art videos.
+        </p>
+
+        <br>
+
+        <p>
+            I'm a passionate artist and gamer who enjoys creating amazing artwork and sharing it with others online.
+        </p>
+    </section>
+
+</div>
+
+</body>
+</html>
